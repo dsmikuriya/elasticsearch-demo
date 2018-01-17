@@ -1,0 +1,12 @@
+<h2>Search Form</h2>
+
+<form class="form-inline" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <div class="col-xs-10">
+      <input type="text" class="form-control" id="area" placeholder="場所は？" [(ngModel)]="model.area" name="area">
+      <input type="text" class="form-control" id="query" placeholder="問い合わせ内容は？ ※必須入力" size="80" required [(ngModel)]="model.query" name="query">
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-success">検索</button>
+</form>

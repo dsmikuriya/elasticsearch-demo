@@ -1,0 +1,15 @@
+<h2>Search Results({{elasticsearchService.getHits()}} hits)</h2>
+<table class="table table-striped table-hover table-bordered">
+  <tr>
+    <th>score</th>
+    <th>question</th>
+    <th>answer</th>
+    <th>date</th>
+  </tr>
+  <tr *ngFor="let doc of elasticsearchService.getDocuments()">
+    <td>{{doc.score}}</td>
+    <td><span innerHTML="{{doc.question}}"></span></td>
+    <td>{{doc.answer}}</td>
+    <td>{{doc.date}}</td>
+  </tr>
+</table>

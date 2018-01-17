@@ -1,0 +1,8 @@
+body {
+    /* bootstrapの隠れる問題解決策 */
+    padding-top: 80px;
+}
+
+.word-break {
+    word-break: break-all;
+}
